@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "country_currency": "local",
+  "global_currency": "EUR",
+  "country_order": [
+    "ES",
+    "DE",
+    "AT",
+    "BE",
+    "IT",
+    "PT",
+    "FR",
+    "UK",
+    "ZA",
+    "RO",
+    "BR",
+    "DK",
+    "NO",
+    "SE"
+  ],
+  "default_group": "core",
+  "groups": [
+    {
+      "id": "core",
+      "name": "CORE countries",
+      "entity_ids": [
+        "ES",
+        "DE",
+        "AT",
+        "BE",
+        "IT",
+        "PT",
+        "FR",
+        "UK",
+        "ZA"
+      ]
+    },
+    {
+      "id": "noncore",
+      "name": "NON CORE countries",
+      "entity_ids": [
+        "RO",
+        "BR",
+        "DK",
+        "NO",
+        "SE"
+      ]
+    }
+  ],
+  "consolidated_rows": [
+    {
+      "id": "DE_AT",
+      "name": "Germany + Austria",
+      "entity_ids": [
+        "DE",
+        "AT"
+      ],
+      "groups": [
+        "core",
+        "GLOBAL"
+      ]
+    }
+  ],
+  "country_options": {
+    "UK": {
+      "show_stock_bins": false,
+      "currency": "local",
+      "amount_band_note": "Amounts in GBP. Source band thresholds are labelled EUR and remain unconfirmed; the first band includes a negative amount.",
+      "amount_band_currency": "unconfirmed_source_EUR",
+      "distribution_quality": "unconfirmed"
+    },
+    "ZA": {
+      "show_stock_bins": false,
+      "currency": "local",
+      "amount_band_note": "Amounts in ZAR. The source places the entire total in its first EUR-labelled band; a reliable amount breakdown is not available.",
+      "amount_band_currency": "unconfirmed_source_EUR",
+      "distribution_quality": "unusable"
+    },
+    "BR": {
+      "show_stock_bins": false
+    },
+    "BE": {
+      "note": "Stock tables: updated KPI_3. Flow chart and stock comparison: KPI_2."
+    },
+    "FR": {
+      "note": "Stock tables: updated KPI_3. Flow chart and stock comparison: KPI_2."
+    },
+    "DE": {
+      "note": "Stock tables: updated KPI_3. Flow chart and stock comparison: KPI_2."
+    },
+    "PT": {
+      "note": "Stock tables: updated KPI_3. Flow chart and stock comparison: KPI_2."
+    },
+    "ES": {
+      "note": "Stock tables: updated KPI_3. Flow chart and stock comparison: KPI_2."
+    }
+  },
+  "chart_short_names": {
+    "Germany + Austria": "DE + AT",
+    "South Africa": "S. Africa"
+  },
+  "chronological_month_tables": true,
+  "shared_efficiency_country_column": true,
+  "percentage_axis_headroom": false,
+  "only_nordic_cst_rows": true,
+  "style": {
+    "font": "Arial",
+    "country_header": "00627A",
+    "global_header": "77B900",
+    "total_fill": "B7DDE8",
+    "refund": "92C43D",
+    "false_positive": "006633",
+    "remaining": "A6A6A6",
+    "unreachable": "D9A72C",
+    "authority_refund": "6CAED6",
+    "other_without_refund": "B4A7D6",
+    "efficiency_amount": "005B63",
+    "efficiency_count": "7E245A",
+    "vintage_old": "0095B6",
+    "vintage_prior": "D9A72C",
+    "vintage_current": "77B900"
+  },
+  "category_labels": {},
+  "comments": {
+    "2026Q3": {
+      "BE": [
+        "Amount-band and vintage sums differ from the reported total by +1 / -1 EUR. Reported totals retained."
+      ],
+      "FR": [
+        "Amount-band detail is 1 EUR below the reported total. Vintage total agrees with KPI_2."
+      ],
+      "DE": [
+        "Amount bands contain 1 fewer contract than vintages. Amount detail differs by +1 / -1 EUR; reported totals retained."
+      ],
+      "PT": [
+        "Separate detail ending Jun-26 is about 218k EUR; it does not reconcile to Sep-26 stock. Amount-band rounding difference: 1 EUR."
+      ],
+      "ES": [
+        "KPI_3 exceeds KPI_2 by approximately 3k EUR; reconciliation is outstanding."
+      ],
+      "GLOBAL": [
+        "Stock summaries use KPI_2. Spain differs from KPI_3; see country notes."
+      ],
+      "core": [
+        "Stock summaries use KPI_2. Spain differs from KPI_3; see country notes."
+      ]
+    }
+  },
+  "additional_amount_band_countries": [
+    "UK",
+    "ZA"
+  ]
+}

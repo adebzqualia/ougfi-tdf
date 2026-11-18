@@ -1,0 +1,9 @@
+{
+  "period": "2026Q3",
+  "countries": {
+    "RO": {
+      "stock_zero": true,
+      "reason": "Reporting owner confirmed zero closing stock for Q3 2026; no monthly-flow figures supplied."
+    }
+  }
+}

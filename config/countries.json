@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "fx": {
+    "file_patterns": [
+      "Taux.xlsx",
+      "taux_q{quarter}{year}.xlsx",
+      "taux_Q{quarter}_{year}.xlsx",
+      "taux_{period}.xlsx"
+    ],
+    "date_override": null,
+    "allow_period_in_filename": true
+  },
+  "countries": [
+    {
+      "id": "ES",
+      "name": "Spain",
+      "currency": "EUR",
+      "profile": "standard",
+      "aliases": [
+        "Spain",
+        "Espagne"
+      ],
+      "file_patterns": [
+        "SPAIN.xlsx",
+        "SPAIN_Q{quarter}_{year}.xlsx",
+        "SPAIN_Q{quarter}{year}.xlsx"
+      ],
+      "processed_fields": [
+        "refund",
+        "unreachable",
+        "false_positive"
+      ],
+      "identified_addback_fields": [
+        "unreachable"
+      ],
+      "enabled": true,
+      "units": 1
+    },
+    {
+      "id": "DE",
+      "name": "Germany",
+      "currency": "EUR",
+      "profile": "standard",
+      "aliases": [
+        "Germany",
+        "Allemagne"
+      ],
+      "file_patterns": [
+        "GERMANY.xlsx",
+        "GERMANY_Q{quarter}_{year}.xlsx",
+        "GERMANY_Q{quarter}{year}.xlsx"
+      ],
+      "processed_fields": [
+        "refund",
+        "unreachable",
+        "false_positive"
+      ],
+      "identified_addback_fields": [
+        "unreachable"
+      ],
+      "enabled": true,
+      "units": 1
+    },
+    {
+      "id": "AT",
+      "name": "Austria",
+      "currency": "EUR",
+      "profile": "standard",
+      "aliases": [
+        "Austria",
+        "Autriche"
+      ],
+      "file_patterns": [
+        "AUSTRIA.xlsx",
+        "AUSTRIA_Q{quarter}_{year}.xlsx",
+        "AUSTRIA_Q{quarter}{year}.xlsx"
+      ],
+      "processed_fields": [
+        "refund",
+        "unreachable",
+        "false_positive"
+      ],
+      "identified_addback_fields": [
+        "unreachable"
+      ],
+      "enabled": true,
+      "units": 1
+    },
+    {
+      "id": "BE",
+      "name": "Belgium",
+      "currency": "EUR",
+      "profile": "standard",
+      "aliases": [
+        "Belgium",
+        "Belgique"
+      ],
+      "file_patterns": [
+        "BELGIUM.xlsx",
+        "BELGIUM_Q{quarter}_{year}.xlsx",
+        "BELGIUM_Q{quarter}{year}.xlsx"
+      ],
+      "processed_fields": [
+        "refund",
+        "authority_refund",
+        "unreachable"
+      ],
+      "identified_addback_fields": [
+        "authority_refund"
+      ],
+      "enabled": true,
+      "units": 1
+    },
+    {
+      "id": "IT",
+      "name": "Italy",
+      "currency": "EUR",
+      "profile": "standard",
+      "aliases": [
+        "Italy",
+        "Italie"
+      ],
+      "file_patterns": [
+        "ITALY.xlsx",
+        "ITALY_Q{quarter}_{year}.xlsx",
+        "ITALY_Q{quarter}{year}.xlsx"
+      ],
+      "processed_fields": [
+        "refund",
+        "unreachable",
+        "false_positive"
+      ],
+      "identified_addback_fields": [
+        "unreachable"
+      ],
+      "enabled": true,
+      "units": 1
+    },
+    {
+      "id": "PT",
+      "name": "Portugal",
+      "currency": "EUR",
+      "profile": "standard",
+      "aliases": [
+        "Portugal"
+      ],
+      "file_patterns": [
+        "PORTUGAL.xlsx",
+        "PORTUGAL_Q{quarter}_{year}.xlsx",
+        "PORTUGAL_Q{quarter}{year}.xlsx"
+      ],
+      "processed_fields": [
+        "refund",
+        "unreachable",
+        "false_positive"
+      ],
+      "identified_addback_fields": [
+        "unreachable"
+      ],
+      "enabled": true,
+      "units": 1
+    },
+    {
+      "id": "FR",
+      "name": "France",
+      "currency": "EUR",
+      "profile": "standard",
+      "aliases": [
+        "France",
+        "PFF"
+      ],
+      "country_aliases": [
+        "France",
+        "PFF"
+      ],
+      "file_patterns": [
+        "FRANCE.xlsx",
+        "PFF.xlsx",
+        "FRANCE_Q{quarter}_{year}.xlsx",
+        "FRANCE_Q{quarter}{year}.xlsx"
+      ],
+      "processed_fields": [
+        "refund",
+        "unreachable",
+        "false_positive"
+      ],
+      "identified_addback_fields": [
+        "unreachable"
+      ],
+      "enabled": true,
+      "units": 1
+    },
+    {
+      "id": "UK",
+      "name": "UK",
+      "currency": "GBP",
+      "profile": "standard",
+      "aliases": [
+        "UK",
+        "United Kingdom"
+      ],
+      "country_aliases": [
+        "UK",
+        "United Kingdom"
+      ],
+      "file_patterns": [
+        "UK.xlsx",
+        "UK_Q{quarter}_{year}.xlsx",
+        "UK_Q{quarter}{year}.xlsx"
+      ],
+      "processed_fields": [
+        "refund",
+        "unreachable",
+        "false_positive"
+      ],
+      "identified_addback_fields": [
+        "unreachable"
+      ],
+      "enabled": true,
+      "units": 1
+    },
+    {
+      "id": "ZA",
+      "name": "South Africa",
+      "currency": "ZAR",
+      "profile": "standard",
+      "aliases": [
+        "South Africa",
+        "South_Africa",
+        "RCS"
+      ],
+      "country_aliases": [
+        "South Africa",
+        "RCS"
+      ],
+      "currency_aliases": [
+        "ZAR",
+        "R"
+      ],
+      "file_patterns": [
+        "RCS.xlsx",
+        "SOUTH_AFRICA.xlsx",
+        "RCS_Q{quarter}_{year}.xlsx",
+        "RCS_Q{quarter}{year}.xlsx"
+      ],
+      "processed_fields": [
+        "refund",
+        "unreachable",
+        "false_positive"
+      ],
+      "identified_addback_fields": [
+        "unreachable"
+      ],
+      "enabled": true,
+      "units": 1
+    },
+    {
+      "id": "RO",
+      "name": "Romania",
+      "currency": "EUR",
+      "profile": "romania",
+      "aliases": [
+        "Romania",
+        "Roumanie"
+      ],
+      "file_patterns": [
+        "ROMANIA.xlsx",
+        "ROMANIA_Q{quarter}_{year}.xlsx",
+        "ROMANIA_Q{quarter}{year}.xlsx"
+      ],
+      "processed_fields": [],
+      "identified_addback_fields": [],
+      "enabled": true,
+      "units": 1
+    },
+    {
+      "id": "BR",
+      "name": "Brazil",
+      "currency": "BRL",
+      "profile": "brazil",
+      "aliases": [
+        "Brazil",
+        "Brasil",
+        "Bresil"
+      ],
+      "file_patterns": [
+        "BRAZIL.xlsb",
+        "BRAZIL_Q{quarter}_{year}.xlsb",
+        "BRAZIL_Q{quarter}{year}.xlsb"
+      ],
+      "processed_fields": [],
+      "identified_addback_fields": [],
+      "enabled": true,
+      "units": 1
+    },
+    {
+      "id": "DK",
+      "name": "Denmark",
+      "currency": "DKK",
+      "profile": "nordics",
+      "aliases": [
+        "Nordics",
+        "Denmark"
+      ],
+      "file_patterns": [
+        "NORDICS.xlsx",
+        "NORDICS_Q{quarter}_{year}.xlsx",
+        "NORDICS_Q{quarter}{year}.xlsx",
+        "NORDICS_Q{quarter}.xlsx"
+      ],
+      "sheet_prefix": "DEN_",
+      "processed_fields": [
+        "refund",
+        "authority_refund",
+        "other_without_refund"
+      ],
+      "identified_addback_fields": [],
+      "requires_cst": true,
+      "enabled": true,
+      "units": 1
+    },
+    {
+      "id": "NO",
+      "name": "Norway",
+      "currency": "NOK",
+      "profile": "nordics",
+      "aliases": [
+        "Nordics",
+        "Norway"
+      ],
+      "file_patterns": [
+        "NORDICS.xlsx",
+        "NORDICS_Q{quarter}_{year}.xlsx",
+        "NORDICS_Q{quarter}{year}.xlsx",
+        "NORDICS_Q{quarter}.xlsx"
+      ],
+      "sheet_prefix": "NOR_",
+      "processed_fields": [
+        "refund",
+        "authority_refund",
+        "other_without_refund"
+      ],
+      "identified_addback_fields": [],
+      "requires_cst": true,
+      "enabled": true,
+      "units": 1
+    },
+    {
+      "id": "SE",
+      "name": "Sweden",
+      "currency": "SEK",
+      "profile": "nordics",
+      "aliases": [
+        "Nordics",
+        "Sweden"
+      ],
+      "file_patterns": [
+        "NORDICS.xlsx",
+        "NORDICS_Q{quarter}_{year}.xlsx",
+        "NORDICS_Q{quarter}{year}.xlsx",
+        "NORDICS_Q{quarter}.xlsx"
+      ],
+      "sheet_prefix": "SWE_",
+      "processed_fields": [
+        "refund",
+        "authority_refund",
+        "other_without_refund"
+      ],
+      "identified_addback_fields": [],
+      "requires_cst": true,
+      "enabled": true,
+      "units": 1
+    }
+  ]
+}

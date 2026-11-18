@@ -1,0 +1,428 @@
+{
+  "period": "2026Q3",
+  "definition": "Sum of the six calendar monthly incoming amounts / 6; includes false positives. A missing month is unknown, a reported zero is zero.",
+  "country_pages": "Local currency unless explicitly configured otherwise.",
+  "group_pages": "EUR: convert each country at current-quarter FX before summing.",
+  "countries": [
+    {
+      "country": "ES",
+      "name": "Spain",
+      "currency": "EUR",
+      "months": [
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09"
+      ],
+      "incoming_by_month_local": [
+        3475518.0,
+        3162844.0,
+        4107101.0,
+        3892550.0,
+        2506521.0,
+        3356886.0
+      ],
+      "months_available": 6,
+      "six_month_incoming_local": 20501420.0,
+      "average_monthly_local": 3416903.3333333335,
+      "report_average_local": 3416903.3333333335,
+      "local_units_per_EUR": 1,
+      "average_monthly_EUR": 3416903.3333333335,
+      "incoming_contracts": 42672.0,
+      "average_balance_per_contract_local": 480.44197600299964,
+      "complete": true
+    },
+    {
+      "country": "DE",
+      "name": "Germany",
+      "currency": "EUR",
+      "months": [
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09"
+      ],
+      "incoming_by_month_local": [
+        775286.0,
+        676517.0,
+        803008.0,
+        943570.0,
+        970510.0,
+        847485.0
+      ],
+      "months_available": 6,
+      "six_month_incoming_local": 5016376.0,
+      "average_monthly_local": 836062.6666666666,
+      "report_average_local": 836062.6666666666,
+      "local_units_per_EUR": 1,
+      "average_monthly_EUR": 836062.6666666666,
+      "incoming_contracts": 22714.0,
+      "average_balance_per_contract_local": 220.84952011974994,
+      "complete": true
+    },
+    {
+      "country": "AT",
+      "name": "Austria",
+      "currency": "EUR",
+      "months": [
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09"
+      ],
+      "incoming_by_month_local": [
+        6180.0,
+        13201.0,
+        5127.0,
+        11384.0,
+        6744.0,
+        4508.0
+      ],
+      "months_available": 6,
+      "six_month_incoming_local": 47144.0,
+      "average_monthly_local": 7857.333333333333,
+      "report_average_local": 7857.333333333333,
+      "local_units_per_EUR": 1,
+      "average_monthly_EUR": 7857.333333333333,
+      "incoming_contracts": 419.0,
+      "average_balance_per_contract_local": 112.51551312649164,
+      "complete": true
+    },
+    {
+      "country": "BE",
+      "name": "Belgium",
+      "currency": "EUR",
+      "months": [
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09"
+      ],
+      "incoming_by_month_local": [
+        105005.0,
+        68164.0,
+        104341.0,
+        71809.0,
+        119870.0,
+        52704.0
+      ],
+      "months_available": 6,
+      "six_month_incoming_local": 521893.0,
+      "average_monthly_local": 86982.16666666667,
+      "report_average_local": 86982.16666666667,
+      "local_units_per_EUR": 1,
+      "average_monthly_EUR": 86982.16666666667,
+      "incoming_contracts": 1156.0,
+      "average_balance_per_contract_local": 451.4645328719723,
+      "complete": true
+    },
+    {
+      "country": "IT",
+      "name": "Italy",
+      "currency": "EUR",
+      "months": [
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09"
+      ],
+      "incoming_by_month_local": [
+        1199204.0,
+        1425617.0,
+        977488.0,
+        1234017.0,
+        898183.0,
+        820358.0
+      ],
+      "months_available": 6,
+      "six_month_incoming_local": 6554867.0,
+      "average_monthly_local": 1092477.8333333333,
+      "report_average_local": 1092477.8333333333,
+      "local_units_per_EUR": 1,
+      "average_monthly_EUR": 1092477.8333333333,
+      "incoming_contracts": 26932.0,
+      "average_balance_per_contract_local": 243.38582355562156,
+      "complete": true
+    },
+    {
+      "country": "PT",
+      "name": "Portugal",
+      "currency": "EUR",
+      "months": [
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09"
+      ],
+      "incoming_by_month_local": [
+        4060466.0,
+        3650675.0,
+        2534318.0,
+        1649935.0,
+        1234586.0,
+        1001410.0
+      ],
+      "months_available": 6,
+      "six_month_incoming_local": 14131390.0,
+      "average_monthly_local": 2355231.6666666665,
+      "report_average_local": 2355231.6666666665,
+      "local_units_per_EUR": 1,
+      "average_monthly_EUR": 2355231.6666666665,
+      "incoming_contracts": 17589.0,
+      "average_balance_per_contract_local": 803.4220251293422,
+      "complete": true
+    },
+    {
+      "country": "FR",
+      "name": "France",
+      "currency": "EUR",
+      "months": [
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09"
+      ],
+      "incoming_by_month_local": [
+        1825315,
+        1394486,
+        1738908,
+        1680101,
+        1332248,
+        1473477
+      ],
+      "months_available": 6,
+      "six_month_incoming_local": 9444535,
+      "average_monthly_local": 1574089.1666666667,
+      "report_average_local": 1574089.1666666667,
+      "local_units_per_EUR": 1,
+      "average_monthly_EUR": 1574089.1666666667,
+      "incoming_contracts": 46681,
+      "average_balance_per_contract_local": 202.32075148347295,
+      "complete": true
+    },
+    {
+      "country": "UK",
+      "name": "UK",
+      "currency": "GBP",
+      "months": [
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09"
+      ],
+      "incoming_by_month_local": [
+        103356.0,
+        145777.0,
+        79929.0,
+        114841.0,
+        134216.0,
+        505169.0
+      ],
+      "months_available": 6,
+      "six_month_incoming_local": 1083288.0,
+      "average_monthly_local": 180548.0,
+      "report_average_local": 180548.0,
+      "local_units_per_EUR": 0.85443381,
+      "average_monthly_EUR": 211307.18130173243,
+      "incoming_contracts": 16386.0,
+      "average_balance_per_contract_local": 66.11058220432076,
+      "complete": true
+    },
+    {
+      "country": "ZA",
+      "name": "South Africa",
+      "currency": "ZAR",
+      "months": [
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09"
+      ],
+      "incoming_by_month_local": [
+        3310607.740000024,
+        3439878.8000000147,
+        3537916.1999999965,
+        4252435.729999964,
+        4095709.079999954,
+        4343101.549999991
+      ],
+      "months_available": 6,
+      "six_month_incoming_local": 22979649.099999946,
+      "average_monthly_local": 3829941.5166666578,
+      "report_average_local": 3829941.5166666578,
+      "local_units_per_EUR": 18.58943911,
+      "average_monthly_EUR": 206027.81471800187,
+      "incoming_contracts": 117674,
+      "average_balance_per_contract_local": 195.28229770382535,
+      "complete": true
+    },
+    {
+      "country": "RO",
+      "name": "Romania",
+      "currency": "EUR",
+      "months": [
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09"
+      ],
+      "incoming_by_month_local": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "months_available": 0,
+      "six_month_incoming_local": null,
+      "average_monthly_local": null,
+      "report_average_local": null,
+      "local_units_per_EUR": 1,
+      "average_monthly_EUR": null,
+      "incoming_contracts": null,
+      "average_balance_per_contract_local": null,
+      "complete": false
+    },
+    {
+      "country": "BR",
+      "name": "Brazil",
+      "currency": "BRL",
+      "months": [
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09"
+      ],
+      "incoming_by_month_local": [
+        22695.36,
+        14874.300000000003,
+        9310.760000000026,
+        9959.560000000005,
+        1465.87,
+        15278.08
+      ],
+      "months_available": 6,
+      "six_month_incoming_local": 73583.93000000004,
+      "average_monthly_local": 12263.98833333334,
+      "report_average_local": 12263.98833333334,
+      "local_units_per_EUR": 5.855892595,
+      "average_monthly_EUR": 2094.2987143932305,
+      "incoming_contracts": 725.0,
+      "average_balance_per_contract_local": 101.49507586206902,
+      "complete": true
+    },
+    {
+      "country": "DK",
+      "name": "Denmark",
+      "currency": "DKK",
+      "months": [
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09"
+      ],
+      "incoming_by_month_local": [
+        112393.35,
+        169276.62,
+        89121.87,
+        74452.38,
+        80425.65,
+        55289.88
+      ],
+      "months_available": 6,
+      "six_month_incoming_local": 580959.75,
+      "average_monthly_local": 96826.625,
+      "report_average_local": 96826.625,
+      "local_units_per_EUR": 7.47595715,
+      "average_monthly_EUR": 12951.736220157441,
+      "incoming_contracts": 2710,
+      "average_balance_per_contract_local": 214.37629151291512,
+      "complete": true
+    },
+    {
+      "country": "NO",
+      "name": "Norway",
+      "currency": "NOK",
+      "months": [
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09"
+      ],
+      "incoming_by_month_local": [
+        61630.93,
+        146993.71,
+        55560.73,
+        42542.56,
+        43074.340000000004,
+        46303.51
+      ],
+      "months_available": 6,
+      "six_month_incoming_local": 396105.78,
+      "average_monthly_local": 66017.63,
+      "report_average_local": 66017.63,
+      "local_units_per_EUR": 10.90384939,
+      "average_monthly_EUR": 6054.525116656991,
+      "incoming_contracts": 786,
+      "average_balance_per_contract_local": 503.9513740458016,
+      "complete": true
+    },
+    {
+      "country": "SE",
+      "name": "Sweden",
+      "currency": "SEK",
+      "months": [
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09"
+      ],
+      "incoming_by_month_local": [
+        384406.83,
+        139417.63,
+        233126.04,
+        250328.19,
+        125416.33,
+        310723.41000000003
+      ],
+      "months_available": 6,
+      "six_month_incoming_local": 1443418.4300000002,
+      "average_monthly_local": 240569.73833333337,
+      "report_average_local": 240569.73833333337,
+      "local_units_per_EUR": 11.34339828,
+      "average_monthly_EUR": 21207.90722454765,
+      "incoming_contracts": 3433,
+      "average_balance_per_contract_local": 420.4539557238567,
+      "complete": true
+    }
+  ]
+}

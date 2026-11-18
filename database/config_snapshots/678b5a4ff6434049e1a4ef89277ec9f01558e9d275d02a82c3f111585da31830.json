@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "reconciliation_tolerance": 0.01,
+  "countries": {
+    "AT": {
+      "mode": "base_if_present",
+      "profile": "austria_v1",
+      "compare_kpi": true
+    },
+    "BE": {
+      "mode": "base_if_present",
+      "profile": null,
+      "compare_kpi": true
+    },
+    "FR": {
+      "mode": "base_if_present",
+      "profile": null,
+      "compare_kpi": true
+    },
+    "DE": {
+      "mode": "base_if_present",
+      "profile": null,
+      "compare_kpi": true
+    },
+    "DK": {
+      "mode": "base_if_present",
+      "profile": "nordics_v1",
+      "compare_kpi": true
+    },
+    "NO": {
+      "mode": "base_if_present",
+      "profile": "nordics_v1",
+      "compare_kpi": true
+    },
+    "SE": {
+      "mode": "base_if_present",
+      "profile": "nordics_v1",
+      "compare_kpi": true
+    },
+    "PT": {
+      "mode": "base_if_present",
+      "profile": null,
+      "compare_kpi": true
+    },
+    "ES": {
+      "mode": "base_if_present",
+      "profile": null,
+      "compare_kpi": true
+    },
+    "UK": {
+      "mode": "base_if_present",
+      "profile": null,
+      "compare_kpi": true
+    }
+  },
+  "profiles": {
+    "nordics_v1": {
+      "allowed_countries": [
+        "Denmark",
+        "Norway",
+        "Sweden"
+      ],
+      "sheet": "Base",
+      "header_row": 4,
+      "reporting_date": {
+        "sheet": "KPI_1",
+        "cell": "G4"
+      },
+      "columns": {
+        "contract": [
+          "Contract number"
+        ],
+        "origin": [
+          "Date of positive balance"
+        ],
+        "decision_date": [
+          "Date of decision"
+        ],
+        "status": [
+          "Decision status"
+        ],
+        "amount": [
+          "Amount in local currency"
+        ],
+        "country": [
+          "Country"
+        ]
+      },
+      "pending_statuses": [
+        ""
+      ],
+      "kpi3_categories": [
+        null
+      ],
+      "kpi3_exclusions": [],
+      "vintage_before": 2018,
+      "reviewed_against": "Supplied Nordic Q3 2026 Base and KPI formulas",
+      "status_categories": {
+        "refund": [
+          "Refund_C"
+        ],
+        "authority_refund": [
+          "Refund_A"
+        ],
+        "other_without_refund": [
+          "CSR",
+          "Reversed payment",
+          "Interests",
+          "Fees",
+          "Recoveries",
+          "Internal transfer",
+          "Insurance premium",
+          "Correction"
+        ]
+      },
+      "missing_decision_date": "error",
+      "decision_before_origin": "warn",
+      "identified_addback_fields": [],
+      "stock_prior_years": 2,
+      "amount_bands": {
+        "basis": "eur_equivalent",
+        "upper_bounds": [
+          1,
+          10,
+          100,
+          1000
+        ],
+        "rate_source": {
+          "sheet": "Parameters",
+          "date_column": 1,
+          "first_row": 2,
+          "last_row": 500,
+          "currency_columns": {
+            "SEK": 2,
+            "DKK": 3,
+            "NOK": 4
+          }
+        }
+      },
+      "formula_equivalents": {
+        "KPI1": "SUMIFS(local amount, Country, country, origin, vintage/month); COUNTIFS with identical filters. Origins through quarter-end.",
+        "KPI2_flow": "Origin month cohorts; processing categories SUMIFS by configured status. Decisions after quarter-end remain pending.",
+        "KPI2_stock": "Pending = origins less processed statuses. Identified = pending. CSR transfers are not the CST account balance.",
+        "KPI3": "Pending as-of records grouped by vintage and EUR-equivalent amount bands, using Parameters quarter-end FX. Disjoint identical boundaries for counts and amounts: first [0,upper], others (lower,upper]."
+      }
+    },
+    "austria_v1": {
+      "date_formats": [
+        "%d.%m.%y",
+        "%d.%m.%Y"
+      ],
+      "invalid_decision_date": "snapshot_status",
+      "duplicate_key_policy": "warn",
+      "decision_before_origin": "warn",
+      "sheet": "Base",
+      "header_row": 4,
+      "reporting_date": {
+        "sheet": "KPI_1",
+        "cell": "G4"
+      },
+      "columns": {
+        "contract": [
+          "Contract number"
+        ],
+        "origin": [
+          "Date of positive balance"
+        ],
+        "decision_date": [
+          "Date of decision"
+        ],
+        "status": [
+          "Decision status"
+        ],
+        "amount": [
+          "Amount"
+        ],
+        "closed": [
+          "Credit balance closed"
+        ]
+      },
+      "pending_statuses": [
+        ""
+      ],
+      "kpi3_categories": [
+        null
+      ],
+      "kpi3_exclusions": [],
+      "vintage_before": 2018,
+      "reviewed_against": "Supplied Austria Q2 2026 Base and KPI formulas; verify subsequent changes",
+      "status_categories": {
+        "refund": [
+          "Refund_C"
+        ],
+        "unreachable": [
+          "Refund_A"
+        ],
+        "false_positive": [
+          "No refund"
+        ]
+      },
+      "missing_decision_date": "snapshot_status",
+      "identified_addback_fields": [
+        "unreachable"
+      ],
+      "stock_prior_years": 1,
+      "amount_bands": {
+        "basis": "local",
+        "upper_bounds": [
+          1,
+          10,
+          100,
+          1000
+        ]
+      },
+      "formula_equivalents": {
+        "KPI1": "SUMIFS(Amount, origin, vintage/month); COUNTIFS with identical filters. All origins bounded by quarter-end.",
+        "KPI2": "Refund_C maps to refund; Refund_A to unreachable; No refund to false_positive per the actual Austria formulas, not the wording.",
+        "KPI3": "Pending records only. Disjoint local bands. Recomputed totals retain Base precision rather than manually rounded KPI totals.",
+        "as_of": "Future decisions remain pending. Missing decision dates use supplied snapshot status, with an explicit warning (observed Austria input has incomplete dates)."
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "standard": {
+    "sheets": {"kpi1": "KPI_1", "kpi2": "KPI_2", "kpi3": "KPI_3"},
+    "metadata": {"date_cell": "G4", "country_cell": "B4", "currency_cell": "B5"},
+    "total_column": 2,
+    "stock_columns": [3, 4, 5],
+    "month_columns": [3, 4, 5, 6, 7, 8],
+    "row_overrides": {},
+    "labels": {
+      "stock_total": ["Total amount of Credit balances"],
+      "stock_processed": ["Contracts processed"],
+      "stock_pending": ["Expected amount to be processed"],
+      "flow_amount": ["Monthly flow in EUR", "Monthly flow in local currency", "Monthly flow in GBP", "Monthly flow in ZAR"],
+      "flow_count": ["Monthly flow in nbr", "Monthly flow in number"],
+      "flow_processed": ["Contracts processed in EUR", "Contracts processed in local currency", "Contracts processed in GBP", "Contracts processed in ZAR"],
+      "flow_processed_count": ["Contracts processed in nbr", "Contracts processed in number"],
+      "flow_pending": ["New expected credit balance"],
+      "flow_pending_count": ["in number of contract"]
+    },
+    "category_labels": {
+      "refund": ["With client refund"],
+      "unreachable": ["Without refund"],
+      "false_positive": ["False positive balance"],
+      "authority_refund": ["With public authorities refund", "With public authority refund"],
+      "other_without_refund": ["Without refund"]
+    },
+    "distribution": {"date_cell": "B1", "section_column": 1, "label_column": 2, "count_column": 3, "amount_column": 4, "amount_label": ["By step of amount"], "vintage_label": ["By date of Positive balance"]}
+  },
+  "nordics": {
+    "sheets": {"kpi1": "KPI_1", "kpi2": "KPI_2", "kpi3": "KPI_3"},
+    "metadata": {"date_cell": "G4", "country_cell": "B4", "currency_cell": "B5"},
+    "total_column": 2,
+    "stock_columns": [3, 4, 5, 6],
+    "month_columns": [3, 4, 5, 6, 7, 8],
+    "row_overrides": {},
+    "labels": {
+      "stock_total": ["Total amount of Credit balances"], "stock_processed": ["Contracts processed"], "stock_pending": ["Expected amount to be processed"],
+      "flow_amount": ["Monthly flow in local currency", "Monthly flow in EUR"], "flow_count": ["Monthly flow in nbr", "Monthly flow in number"],
+      "flow_processed": ["Contracts processed in local currency", "Contracts processed in EUR"], "flow_processed_count": ["Contracts processed in nbr", "Contracts processed in number"],
+      "flow_pending": ["New expected credit balance"], "flow_pending_count": ["in number of contract"]
+    },
+    "category_labels": {"refund": ["With client refund"], "authority_refund": ["With public authorities refund"], "other_without_refund": ["Without refund"]},
+    "distribution": {"date_cell": "B1", "section_column": 1, "label_column": 2, "count_column": 3, "amount_column": 4, "amount_label": ["By step of amount"], "vintage_label": ["By date of Positive balance"]}
+  },
+  "romania": {
+    "sheet": "Quantitative follow up", "date_cell": "B1", "total_count_cell": "C10", "total_amount_cell": "D10",
+    "distribution": {"section_column": 1, "label_column": 2, "count_column": 3, "amount_column": 4, "amount_label": ["By step of amount"], "vintage_label": ["By date of Positive balance"]}
+  },
+  "brazil": {
+    "sheet": "Relatorio", "month_header_row": 3, "stock_amount_row": 4, "stock_count_row": 5,
+    "in_amount_row": 7, "in_count_row": 8, "out_amount_row": 10, "out_count_row": 11,
+    "vintage_year_column": 4, "vintage_first_row": 14, "vintage_last_row": 38, "count_row_offset": 31,
+    "distribution_total_amount_row": 13, "distribution_total_count_row": 44, "old_vintage_before": 2018
+  },
+  "fx_profiles": [
+    {"sheets": ["Table des taux M"], "closing_header_cell": "E2", "closing_header_aliases": ["TC", "Closing rate"], "date_cell": "B2", "currency_column": 1, "closing_rate_column": 5, "first_data_row": 4, "last_data_row": 500},
+    {"sheets": ["Sheet1", "Feuil1"], "closing_header_cell": "F2", "closing_header_aliases": ["TC", "Closing rate"], "date_cell": null, "currency_column": 2, "closing_rate_column": 6, "first_data_row": 6, "last_data_row": 500},
+    {"sheets": ["20??.??"], "closing_header_cell": "F2", "closing_header_aliases": ["TC", "Closing rate"], "date_from_sheet_name": true, "currency_column": 2, "closing_rate_column": 6, "first_data_row": 4, "last_data_row": 500}
+  ]
+}

@@ -1,0 +1,438 @@
+{
+  "valid": true,
+  "period": "2026Q3",
+  "errors": [],
+  "warnings": [
+    {
+      "code": "INVALID_AMOUNT_BANDS",
+      "entity": "UK",
+      "message": "Source amount-band allocation is inconsistent or concentrated in one band; omitted from the presentation and retained in the source data."
+    },
+    {
+      "code": "INVALID_AMOUNT_BANDS",
+      "entity": "ZA",
+      "message": "Source amount-band allocation is inconsistent or concentrated in one band; omitted from the presentation and retained in the source data."
+    },
+    {
+      "code": "BRAZIL_RUNOFF",
+      "entity": "BR",
+      "message": "Brazil supplies monthly IN/OUT calendar movements and stock by origin year. OUT is not cohort treatment; efficiency is unavailable."
+    },
+    {
+      "code": "KPI1_COUNTRY_MISMATCH",
+      "entity": "AT",
+      "message": "Austria KPI1 contains Germany labels and figures. Austria KPI2 and KPI3 are used; the pasted KPI1 is retained for review."
+    },
+    {
+      "code": "KPI1_OUTSIDE_QUARTER",
+      "entity": "DE",
+      "message": "KPI1 contains October inflow 692 EUR / 2 contracts after 30 September. Q3 presentation uses April–September KPI2 cohorts; stock is retained as reported."
+    },
+    {
+      "code": "KPI1_OUTSIDE_QUARTER",
+      "entity": "FR",
+      "message": "KPI1 includes October: 56,384 EUR / 180 contracts. Q3 flow charts use April–September KPI2 only; stock is retained as reported."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "FR",
+      "message": "Reported stock total 2,883,642 EUR retained. Rounded amount bands and KPI2 vintage components sum to 2,883,641 EUR."
+    },
+    {
+      "code": "CONFIRMED_ZERO_STOCK",
+      "entity": "RO",
+      "message": "Q3 closing stock confirmed at zero by the user. Monthly flows and treatment efficiency were not provided."
+    },
+    {
+      "code": "STOCK_SCOPE",
+      "entity": "BE",
+      "message": "Identified stock 147,601.00; source distribution 106,046.00. Identified stock includes the applicable add-back; distribution preserves its source scope."
+    },
+    {
+      "code": "STOCK_SCOPE",
+      "entity": "ES",
+      "message": "Identified stock 1,793,165.00; source distribution 1,483,372.00. Identified stock includes the applicable add-back; distribution preserves its source scope."
+    },
+    {
+      "code": "STOCK_SCOPE",
+      "entity": "PT",
+      "message": "Identified stock 607,594.00; source distribution 558,535.00. Identified stock includes the applicable add-back; distribution preserves its source scope."
+    },
+    {
+      "code": "SOURCE_RECONCILIATION",
+      "entity": "UK",
+      "message": "Band total versus vintage count: calculated 996,867.00, reported 53,697.00. Source values retained."
+    },
+    {
+      "code": "STOCK_SCOPE",
+      "entity": "ZA",
+      "message": "Identified stock 38,076,721.74; source distribution 33,591,674.99. Identified stock includes the applicable add-back; distribution preserves its source scope."
+    },
+    {
+      "code": "SOURCE_RECONCILIATION",
+      "entity": "DE",
+      "message": "Band total versus vintage count: calculated 23,748.00, reported 23,478.00. Source values retained."
+    },
+    {
+      "code": "STOCK_SCOPE",
+      "entity": "DE",
+      "message": "Identified stock 2,778,926.00; source distribution 2,749,252.00. Identified stock includes the applicable add-back; distribution preserves its source scope."
+    },
+    {
+      "code": "COHORT_REVISION",
+      "entity": "ES",
+      "message": "New-flow figures for 2026-04, 2026-05, 2026-06 differ from the Q2 snapshot. Each report retains its supplied snapshot; see Reconciliation."
+    },
+    {
+      "code": "COHORT_REVISION",
+      "entity": "PT",
+      "message": "New-flow figures for 2026-04, 2026-05, 2026-06 differ from the Q2 snapshot. Each report retains its supplied snapshot; see Reconciliation."
+    },
+    {
+      "code": "COHORT_REVISION",
+      "entity": "UK",
+      "message": "New-flow figures for 2026-04, 2026-05, 2026-06 differ from the Q2 snapshot. Each report retains its supplied snapshot; see Reconciliation."
+    },
+    {
+      "code": "COHORT_REVISION",
+      "entity": "ZA",
+      "message": "New-flow figures for 2026-04, 2026-05, 2026-06 differ from the Q2 snapshot. Each report retains its supplied snapshot; see Reconciliation."
+    },
+    {
+      "code": "COHORT_REVISION",
+      "entity": "BR",
+      "message": "New-flow figures for 2026-04, 2026-05, 2026-06 differ from the Q2 snapshot. Each report retains its supplied snapshot; see Reconciliation."
+    },
+    {
+      "code": "COHORT_REVISION",
+      "entity": "AT",
+      "message": "New-flow figures for 2026-04, 2026-05, 2026-06 differ from the Q2 snapshot. Each report retains its supplied snapshot; see Reconciliation."
+    },
+    {
+      "code": "COHORT_REVISION",
+      "entity": "DE",
+      "message": "New-flow figures for 2026-04, 2026-05, 2026-06 differ from the Q2 snapshot. Each report retains its supplied snapshot; see Reconciliation."
+    },
+    {
+      "code": "COHORT_REVISION",
+      "entity": "FR",
+      "message": "New-flow figures for 2026-04, 2026-05, 2026-06 differ from the Q2 snapshot. Each report retains its supplied snapshot; see Reconciliation."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "BE",
+      "message": "Processed components: detail 35,597,891.00, reported 35,597,890.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "BE",
+      "message": "Gross less processed: detail 120.00, reported 119.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "BE",
+      "message": "Gross less processed: detail 39,817.00, reported 39,816.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "BE",
+      "message": "stock_bins amount: detail 147,601.00, reported 147,600.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "BE",
+      "message": "stock_vintages amount: detail 147,599.00, reported 147,600.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "ES",
+      "message": "Processed components: detail 29,127,241.00, reported 29,127,240.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "ES",
+      "message": "Gross less processed: detail 1,467,350.00, reported 1,467,349.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "ES",
+      "message": "Processed components: detail 3,426,795.00, reported 3,426,794.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "ES",
+      "message": "Gross less processed: detail 48,724.00, reported 48,723.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "ES",
+      "message": "Processed components: detail 3,076,921.00, reported 3,076,922.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "ES",
+      "message": "Processed components: detail 3,752,163.00, reported 3,752,162.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "IT",
+      "message": "Gross less processed: detail 40,982.00, reported 40,983.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "IT",
+      "message": "Processed components: detail 1,089,610.00, reported 1,089,611.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "IT",
+      "message": "stock_vintages amount: detail 3,434,402.00, reported 3,434,403.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "PT",
+      "message": "Processed components: detail 1,988,871.00, reported 1,988,872.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "PT",
+      "message": "Gross less processed: detail 47,518.00, reported 47,517.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "PT",
+      "message": "Gross less processed: detail 503,989.00, reported 503,988.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "PT",
+      "message": "Processed components: detail 4,048,165.00, reported 4,048,164.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "PT",
+      "message": "Gross less processed: detail 21,722.00, reported 21,723.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "PT",
+      "message": "Gross less processed: detail 21,463.00, reported 21,464.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "PT",
+      "message": "Processed components: detail 1,605,669.00, reported 1,605,668.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "PT",
+      "message": "Gross less processed: detail 31,691.00, reported 31,692.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "PT",
+      "message": "stock_bins amount: detail 607,593.00, reported 607,594.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "UK",
+      "message": "Processed components: detail 1,921,596.00, reported 1,921,597.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "UK",
+      "message": "Processed components: detail 1,278,172.00, reported 1,278,173.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "UK",
+      "message": "Gross less processed: detail 40,021.00, reported 40,022.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "UK",
+      "message": "Gross less processed: detail 21,381.00, reported 21,382.00. Reported values retained."
+    },
+    {
+      "code": "RECONCILIATION",
+      "entity": "UK",
+      "message": "Amount-band total versus vintage count: detail 996,867.00, reported 53,697.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "AT",
+      "message": "Processed components: detail 1,085,508.00, reported 1,085,509.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "AT",
+      "message": "Processed components: detail 80,290.00, reported 80,289.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "AT",
+      "message": "Gross less processed: detail 6,809.00, reported 6,808.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "AT",
+      "message": "Gross less processed: detail 8.00, reported 7.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "AT",
+      "message": "Processed components: detail 5,193.00, reported 5,192.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "DE",
+      "message": "Processed components: detail 119,592,957.00, reported 119,592,958.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "DE",
+      "message": "Processed components: detail 18,086,561.00, reported 18,086,560.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "DE",
+      "message": "Gross less processed: detail 303,677.00, reported 303,678.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "DE",
+      "message": "Processed components: detail 5,674,950.00, reported 5,674,951.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "DE",
+      "message": "Processed components: detail 661,017.00, reported 661,018.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "DE",
+      "message": "Processed components: detail 523,423.00, reported 523,422.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "DE",
+      "message": "Processed components: detail 600,598.00, reported 600,597.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "DE",
+      "message": "Gross less processed: detail 369,913.00, reported 369,912.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "DE",
+      "message": "Gross less processed: detail 473,692.00, reported 473,693.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "DE",
+      "message": "stock_bins amount: detail 2,778,927.00, reported 2,778,926.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "DE",
+      "message": "stock_vintages amount: detail 2,778,925.00, reported 2,778,926.00. Reported values retained."
+    },
+    {
+      "code": "RECONCILIATION",
+      "entity": "DE",
+      "message": "Amount-band total versus vintage count: detail 23,909.00, reported 23,910.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "FR",
+      "message": "Processed components: detail 1,279,790.00, reported 1,279,791.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "FR",
+      "message": "Processed components: detail 8,683,927.00, reported 8,683,928.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "FR",
+      "message": "Processed components: detail 1,738,907.00, reported 1,738,908.00. Reported values retained."
+    },
+    {
+      "code": "ROUNDING",
+      "entity": "FR",
+      "message": "stock_bins amount: detail 2,883,641.00, reported 2,883,642.00. Reported values retained."
+    },
+    {
+      "code": "BASE_EXTRACTED",
+      "entity": "DK",
+      "message": "Derived KPI data from 6646 Base records using nordics_v1; no KPI formula caches required."
+    },
+    {
+      "code": "BASE_DECISION_BEFORE_ORIGIN",
+      "entity": "DK",
+      "message": "Decision precedes origin; preserved snapshot category under explicit warn policy: 4."
+    },
+    {
+      "code": "CST_REQUIRED",
+      "entity": "DK",
+      "message": "Base CSR movements do not supply the separate CST account closing balance."
+    },
+    {
+      "code": "BASE_EXTRACTED",
+      "entity": "NO",
+      "message": "Derived KPI data from 4472 Base records using nordics_v1; no KPI formula caches required."
+    },
+    {
+      "code": "CST_REQUIRED",
+      "entity": "NO",
+      "message": "Base CSR movements do not supply the separate CST account closing balance."
+    },
+    {
+      "code": "BASE_EXTRACTED",
+      "entity": "SE",
+      "message": "Derived KPI data from 9218 Base records using nordics_v1; no KPI formula caches required."
+    },
+    {
+      "code": "CST_REQUIRED",
+      "entity": "SE",
+      "message": "Base CSR movements do not supply the separate CST account closing balance."
+    }
+  ],
+  "coverage": {
+    "expected": [
+      "AT",
+      "BE",
+      "BR",
+      "DE",
+      "DK",
+      "ES",
+      "FR",
+      "IT",
+      "NO",
+      "PT",
+      "RO",
+      "SE",
+      "UK",
+      "ZA"
+    ],
+    "received": [
+      "AT",
+      "BE",
+      "BR",
+      "DE",
+      "DK",
+      "ES",
+      "FR",
+      "IT",
+      "NO",
+      "PT",
+      "RO",
+      "SE",
+      "UK",
+      "ZA"
+    ],
+    "missing": []
+  },
+  "snapshot_sha256": "956000e061f29301ab9bd80d903eac02c591ddceee536a9c2869cfda8e5fbded"
+}

@@ -1,0 +1,76 @@
+{
+  "changes": [
+    {
+      "country": "DK",
+      "old_pending": 16166.710000000001,
+      "new_pending": 16166.710000000001,
+      "old_average": 96826.625,
+      "new_average": 96826.625
+    },
+    {
+      "country": "NO",
+      "old_pending": 22084.09,
+      "new_pending": 22084.09,
+      "old_average": 66017.63,
+      "new_average": 66017.63
+    },
+    {
+      "country": "SE",
+      "old_pending": 172626.62,
+      "new_pending": 172626.62,
+      "old_average": 240569.73833333337,
+      "new_average": 240569.73833333337
+    }
+  ],
+  "findings": [
+    {
+      "severity": "warning",
+      "entity": "DK",
+      "code": "BASE_EXTRACTED",
+      "message": "Derived KPI data from 6646 Base records using nordics_v1; no KPI formula caches required.",
+      "source": "nordics_q3.xlsx"
+    },
+    {
+      "severity": "warning",
+      "entity": "DK",
+      "code": "BASE_DECISION_BEFORE_ORIGIN",
+      "message": "Decision precedes origin; preserved snapshot category under explicit warn policy: 4.",
+      "source": "nordics_q3.xlsx"
+    },
+    {
+      "severity": "warning",
+      "entity": "DK",
+      "code": "CST_REQUIRED",
+      "message": "Base CSR movements do not supply the separate CST account closing balance.",
+      "source": "nordics_q3.xlsx"
+    },
+    {
+      "severity": "warning",
+      "entity": "NO",
+      "code": "BASE_EXTRACTED",
+      "message": "Derived KPI data from 4472 Base records using nordics_v1; no KPI formula caches required.",
+      "source": "nordics_q3.xlsx"
+    },
+    {
+      "severity": "warning",
+      "entity": "NO",
+      "code": "CST_REQUIRED",
+      "message": "Base CSR movements do not supply the separate CST account closing balance.",
+      "source": "nordics_q3.xlsx"
+    },
+    {
+      "severity": "warning",
+      "entity": "SE",
+      "code": "BASE_EXTRACTED",
+      "message": "Derived KPI data from 9218 Base records using nordics_v1; no KPI formula caches required.",
+      "source": "nordics_q3.xlsx"
+    },
+    {
+      "severity": "warning",
+      "entity": "SE",
+      "code": "CST_REQUIRED",
+      "message": "Base CSR movements do not supply the separate CST account closing balance.",
+      "source": "nordics_q3.xlsx"
+    }
+  ]
+}

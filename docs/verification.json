@@ -1,0 +1,54 @@
+{
+  "unit_tests": 62,
+  "base_synthetic_tests": 17,
+  "real_base_reconciliation": {
+    "DK": {
+      "metrics": 61,
+      "differences": 0
+    },
+    "NO": {
+      "metrics": 61,
+      "differences": 0
+    },
+    "SE": {
+      "metrics": 61,
+      "differences": 0
+    },
+    "AT": {
+      "metrics": 57,
+      "differences": 1,
+      "difference": "0.29 EUR: cached KPI3 rounded versus Base precision"
+    }
+  },
+  "workbook": {
+    "numericCellsChecked": 8269,
+    "mutations": [
+      "six-month mean",
+      "CORE summary",
+      "rounded caption",
+      "missing month",
+      "zero month",
+      "GBP supplemental table"
+    ],
+    "errorScan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+  },
+  "integration": {
+    "full_cli": "passed",
+    "idempotent_repeat": "passed",
+    "wrong_quarter_preserves_history": "passed",
+    "base_countries": [
+      "DK",
+      "NO",
+      "SE"
+    ],
+    "kpi_country": "ZA",
+    "explicit_zero_country": "RO",
+    "config_snapshots": "saved",
+    "countries": 5
+  },
+  "limits": [
+    "Only Nordic and Austrian Base profiles verified against supplied workbooks. Other Base profiles require review.",
+    "UK/ZA source band labels remain ambiguous; no fictional local thresholds are inferred.",
+    "Source reconciliation findings and date anomalies remain recorded; passing software tests does not correct country source data."
+  ]
+}
